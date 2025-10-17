@@ -59,5 +59,15 @@ profile-card/
 - [x] Readable typography at all screen sizes
 
 ## How to Run Locally
+# Quick start commands
+git clone https://github.com/EmmyIcee09/profile-card-component
+cd profile-card-component
 
+# Run with Python (if installed)
+python -m http.server 8000
+
+# Or open directly
+open index.html  # Mac
+start index.html # Windows
+xdg-open index.html # Linux
 
