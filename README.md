@@ -1,4 +1,9 @@
-# Profile Card Component
+# Profile Card Component HNG STAGE 0
+
+
+## 🚀 Live Demo
+
+Live Site: https://emmysprofilecard.netlify.app 
 
 A responsive, accessible profile card component built with semantic HTML, modern CSS, and vanilla JavaScript.
 
@@ -15,8 +20,8 @@ A responsive, accessible profile card component built with semantic HTML, modern
 ## Project Structure
 profile-card/
 ├── index.html
-├── style.css
 ├── script.js
+├── style.css
 └── README.md
 
 ## Requirements Met
@@ -55,8 +60,4 @@ profile-card/
 
 ## How to Run Locally
 
-1. **Clone or download the project files**
-   ```bash
-   # If using git
-   git clone <repository-url>
-   cd profile-card
+
