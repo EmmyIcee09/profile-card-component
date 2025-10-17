@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emmanuel Oluwaniran — Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <article class="profile-card" data-testid="test-profile-card" aria-labelledby="profile-name">
+      <figure class="avatar" aria-hidden="false">
+        <!-- Put the image file in assets/ with exactly this filename -->
+        <img src="emmy.jpeg"
+             alt="Profile photo of Emmanuel Oluwasey Oluwaniran"
+             data-testid="test-user-avatar" />
+      </figure>
+
+      <div class="profile-body">
+        <header class="profile-header">
+          <h2 id="profile-name" data-testid="test-user-name">Emmanuel Oluwasey Oluwaniran</h2>
+
+          <!-- Theme toggle -->
+          <button id="theme-toggle"
+                  class="theme-toggle"
+                  aria-pressed="false"
+                  aria-label="Toggle dark mode"
+                  title="Toggle dark mode">
+            🌙
+          </button>
+        </header>
+
+        <p class="bio" data-testid="test-user-bio">
+          Highly skilled front-end developer with a passion for crafting intuitive, responsive, and engaging user interfaces.
+          Specializing in modern JavaScript frameworks like React and Next.js, I drive seamless user experiences and explore the limitless
+          potential of web3, blockchain, and crypto technologies. Excited by decentralized innovation and committed to delivering
+          pixel-perfect solutions that merge creativity with cutting-edge tech.
+        </p>
+
+        <p class="time-line">
+          Current time (ms): <span data-testid="test-user-time" aria-live="polite"></span>
+        </p>
+
+        <nav class="social" aria-label="Social links" data-testid="test-user-social-links">
+          <ul>
+            <li><a href="https://twitter.com/iamtheblueboiy"
+                   data-testid="test-user-social-twitter">Twitter</a></li>
+            <li><a href="https://github.com/EmmyIcee09"
+                   data-testid="test-user-social-github">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/emmanuel-oluwaniran-907470384/"
+                   data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <section class="lists">
+          <div class="list-block">
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Design</li>
+              <li>Music</li>
+              <li>Football</li>
+            </ul>
+          </div>
+
+          <div class="list-block">
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Slow Wi-Fi</li>
+              <li>Bugs</li>
+              <li>Cluttered UI</li>
+              <li>Lies</li>
+              <li>Procrastination</li>
+              <li>Fish</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
