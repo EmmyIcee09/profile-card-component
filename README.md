@@ -16,6 +16,8 @@ A responsive, accessible profile card component built with semantic HTML, modern
 - ✅ All required data-testid attributes for testing
 - ✅ Social links with proper security attributes
 - ✅ Bonus: Avatar upload functionality
+- ✅ Bonus: Light and Dark theme Toogle
+
 
 ## Project Structure
 profile-card/
