@@ -3,7 +3,9 @@ Profile Card Component HNG STAGE 1
 
 Live Demo
 
-Live Site: https://emmysprofilecard.netlify.app 
+Live Site: https://emmysprofilecard.netlify.app
+
+
 A responsive, accessible multi-page portfolio website built for the HNG Frontend program, featuring a profile card, contact form with validation, and an about me page.
 
 Features
@@ -141,7 +143,9 @@ Built with ❤️ by Emmanuel Oluwaniran for HNG Frontend Stage 1
 
 How to Run Locally
 Quick start commands
+
 git clone https://github.com/EmmyIcee09/profile-card-component
+
 cd profile-card-component
 
 Run with Python (if installed)
@@ -151,3 +155,4 @@ Or open directly
 open index.html  # Mac
 start index.html # Windows
 xdg-open index.html # Linux
+
