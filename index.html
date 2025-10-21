@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emmanuel Oluwaniran Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav" data-testid="test-main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-page="about">About Me</a></li>
+      <li><a href="#contact" class="nav-link" data-page="contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Page (Original Profile Card) -->
+  <main id="home" class="page active" data-testid="test-home-page">
+    <article class="profile-card" data-testid="test-profile-card" aria-labelledby="profile-name">
+      <figure class="avatar" aria-hidden="false">
+        <img src="emmy.jpeg"
+             alt="Profile photo of Emmanuel Oluwaseyi Oluwaniran"
+             data-testid="test-user-avatar" />
+      </figure>
+
+      <div class="profile-body">
+        <header class="profile-header">
+          <h2 id="profile-name" data-testid="test-user-name">Emmanuel Oluwasey Oluwaniran</h2>
+
+          <!-- Theme toggle -->
+          <button id="theme-toggle"
+                  class="theme-toggle"
+                  aria-pressed="false"
+                  aria-label="Toggle dark mode"
+                  title="Toggle dark mode">
+            🌙
+          </button>
+        </header>
+
+        <p class="bio" data-testid="test-user-bio">
+          Highly skilled front-end developer with a passion for crafting intuitive, responsive, and engaging user interfaces.
+          Specializing in modern JavaScript frameworks like React and Next.js, I drive seamless user experiences and explore the limitless
+          potential of web3, blockchain, and crypto technologies. Excited by decentralized innovation and committed to delivering
+          pixel-perfect solutions that merge creativity with cutting-edge tech.
+        </p>
+
+        <p class="time-line">
+          Current time (ms): <span data-testid="test-user-time" aria-live="polite"></span>
+        </p>
+
+        <nav class="social" aria-label="Social links" data-testid="test-user-social-links">
+          <ul>
+            <li><a href="https://twitter.com/iamtheblueboiy"
+                   data-testid="test-user-social-twitter">Twitter</a></li>
+            <li><a href="https://github.com/EmmyIcee09"
+                   data-testid="test-user-social-github">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/emmanuel-oluwaniran-907470384/"
+                   data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <section class="lists">
+          <div class="list-block">
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Design</li>
+              <li>Music</li>
+              <li>Football</li>
+            </ul>
+          </div>
+
+          <div class="list-block">
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Slow Wi-Fi</li>
+              <li>Bugs</li>
+              <li>Cluttered UI</li>
+              <li>Lies</li>
+              <li>Procrastination</li>
+              <li>Fish</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <!-- About Me Page -->
+  <main id="about" class="page" data-testid="test-about-page">
+    <article class="about-content">
+      <header class="page-header">
+        <h1>About Me</h1>
+        <p>My journey and reflections in web development</p>
+      </header>
+
+      <section class="about-section" data-testid="test-about-bio">
+        <h2>My Background</h2>
+        <p>I'm a passionate frontend developer with over 1 years of experience creating digital experiences that blend aesthetics with functionality. My journey started with basic HTML/CSS and has evolved to include modern frameworks and web3 technologies.</p>
+      </section>
+
+      <section class="about-section" data-testid="test-about-goals">
+        <h2>Goals in This Program</h2>
+        <ul>
+          <li>Master advanced React patterns and state management</li>
+          <li>Deepen my understanding of web accessibility standards</li>
+          <li>Improve my frontend integration skills</li>
+          <li>Build production-ready applications with best practices</li>
+          <li>Network with other developers and learn from the community</li>
+        </ul>
+      </section>
+
+      <section class="about-section" data-testid="test-about-confidence">
+        <h2>Areas I'm Working On</h2>
+        <p>While I'm confident in my frontend skills, I'm continuously working to improve in these areas:</p>
+        <ul>
+          <li>Advanced TypeScript patterns and generics</li>
+          <li>Complex state management at scale</li>
+          <li>Performance optimization for large applications</li>
+          <li>Advanced CSS architecture and methodologies</li>
+        </ul>
+      </section>
+
+      <section class="about-section" data-testid="test-about-future-note">
+        <h2>Note to My Future Self</h2>
+        <p>Remember why you started this journey - the excitement of seeing code come to life and creating solutions that make people's lives better. Never stop learning, never stop building, and always prioritize creating accessible, user-friendly experiences over using the latest shiny technology.</p>
+      </section>
+
+      <section class="about-section" data-testid="test-about-extra">
+        <h2>Additional Thoughts</h2>
+        <p>The web development landscape is constantly evolving, and I believe the key to long-term success is adaptability and continuous learning. I'm particularly excited about the intersection of traditional web development with emerging technologies like blockchain and AI, and how we can use these tools to create more decentralized, user-owned internet experiences.</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Contact Us Page -->
+  <main id="contact" class="page" data-testid="test-contact-page">
+    <article class="contact-content">
+      <header class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch - I'd love to hear from you!</p>
+      </header>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="full-name">Full Name *</label>
+          <input type="text" 
+                 id="full-name" 
+                 name="fullName" 
+                 data-testid="test-contact-name"
+                 required
+                 aria-describedby="name-error">
+          <span class="error-message" id="name-error" data-testid="test-contact-error-name" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" 
+                 id="email" 
+                 name="email" 
+                 data-testid="test-contact-email"
+                 required
+                 aria-describedby="email-error">
+          <span class="error-message" id="email-error" data-testid="test-contact-error-email" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <input type="text" 
+                 id="subject" 
+                 name="subject" 
+                 data-testid="test-contact-subject"
+                 required
+                 aria-describedby="subject-error">
+          <span class="error-message" id="subject-error" data-testid="test-contact-error-subject" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" 
+                    name="message" 
+                    rows="6" 
+                    data-testid="test-contact-message"
+                    required
+                    minlength="10"
+                    aria-describedby="message-error"></textarea>
+          <span class="error-message" id="message-error" data-testid="test-contact-error-message" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" 
+                class="submit-btn" 
+                data-testid="test-contact-submit">
+          Send Message
+        </button>
+
+        <div class="success-message" 
+             id="success-message" 
+             data-testid="test-contact-success" 
+             aria-live="polite">
+          <!-- Success message will appear here -->
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
